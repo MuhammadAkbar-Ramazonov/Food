@@ -1,0 +1,36 @@
+.site-navbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 24px;
+    background-color: #1f1d2b;
+    border-top-right-radius: 16px;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.site-nav{
+    margin-right: 26px;
+}
+
+.nav-list{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 12px;
+    list-style: none;
+}
+
+.nav-item{
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
