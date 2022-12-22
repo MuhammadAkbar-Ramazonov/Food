@@ -1,5 +1,5 @@
 import "./App.scss"
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import { Discount } from "./pages/Discount";
 import { Home } from "./pages/Home";
 import { Dashboard } from "./pages/Dashboard";
@@ -13,7 +13,8 @@ function App() {
         <>
             <NavBar/>
             <Routes>
-                <Route path="/*" element={<Home/>}/>
+                <Route path="/" element={<Navigate to="/home" replace={true}/>}/>
+                <Route path="/home/*" element={<Home/>}/>
                 <Route path="/discount/*" element={<Discount/>}/>
                 <Route path="/dashboard/*" element={<Dashboard/>}/>    
                 <Route path="/message/*" element={<Message/>}/>    

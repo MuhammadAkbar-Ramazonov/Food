@@ -14,7 +14,7 @@ export const NavBar = () => {
 
             <nav className="site-nav">
                 <ul className="nav-list">
-                    <NavBarItems link="/">
+                    <NavBarItems link="/home">
                         <HomeIcon/>
                     </NavBarItems>
                     
