@@ -5,7 +5,8 @@ export const Home = () => {
         {/* Bu yerda Home ni Head qismi ulanadi */}
         {/* </>  */}
 
-        Bu joyda ong tarafti Home page di Orders #34562
+        {/* Bu joyda ong tarafti Home page di Orders #34562 */}
+        {/* </> */}
         <Routes>
             <Route index element={<HotDishes />}/>
             {/* <Route path="cold" element={</>}/> */}
