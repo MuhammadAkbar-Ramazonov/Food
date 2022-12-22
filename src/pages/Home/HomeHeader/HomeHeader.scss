@@ -82,3 +82,17 @@
     border-radius: 10px;
     content: "";
 }
+.home-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.home-top-title{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;    
+}

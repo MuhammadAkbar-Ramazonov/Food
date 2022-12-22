@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Input } from "../../../components/Input";
+import { Select } from "../../../components/Select/Select";
 import "./HomeHeader.scss";
 
 export const HomeHeader = () => {
@@ -35,13 +36,22 @@ export const HomeHeader = () => {
                         <NavLink className={({isActive}) => isActive ? "home-header-link home-header-link-active" : "home-header-link"} to="grill">Grill</NavLink>
                     </li>
                     <li className="home-header-item">
-                        <NavLink className={({isActive}) => isActive ? "home-header-link home-header-link-active" : "home-header-link"} to="appetizer">Appetizer</NavLink>
+                        <NavLink className={({isActive}) => isActive ? "home-header-link home-header-link-active" : "home-header-link"} to="appatizer">Appetizer</NavLink>
                     </li>
                     <li className="home-header-item">
                         <NavLink className={({isActive}) => isActive ? "home-header-link home-header-link-active" : "home-header-link"} to="dessert">Dessert</NavLink>
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div className="home-top">
+            <h2 className="home-top-title">
+                Choose Dishes
+            </h2>
+            
+            <Select name="dine">
+                <option selected value="">Dine in</option>
+            </Select>
         </div>
     </>
 }
