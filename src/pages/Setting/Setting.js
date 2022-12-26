@@ -1,4 +1,5 @@
 import "./Settings.scss"
+import {Navigate} from "react-router-dom"
 import {Routes, Route} from "react-router-dom"
 import { Appereance } from "./Appereance"
 import { Restaurant } from "./Restaurant"
@@ -18,7 +19,8 @@ export const Setting = () => {
                     <SettingsNav/>
                 </nav>
                 <Routes>
-                    <Route index element={<Management />}/>
+                    {/* <Route path="/setting" element={<Navigate to="management" replace={true}/>}/> */}
+                    <Route path="management/*" element={<Management/>}/>
                     <Route path="appereance" element={<Appereance />}/>
                     <Route path="your-restaurant" element={<Restaurant />}/>
                     <Route path="settings-notifications" element={<SettingsNotifications />}/>

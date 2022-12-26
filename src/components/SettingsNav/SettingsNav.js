@@ -20,7 +20,7 @@ export const SettingsNav = () => {
             img: <ManagementIcon />,
             title: "Products Management",
             desc: "Manage your product, pricing, etc",
-            link: "/setting",
+            link: "management",
         },
         {
             img: <NotificationsIcon />,
