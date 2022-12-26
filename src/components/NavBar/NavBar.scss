@@ -6,6 +6,11 @@
     padding-top: 24px;
     background-color: #1f1d2b;
     border-top-right-radius: 16px;
+    overflow-y: scroll;
+}
+
+.site-navbox::-webkit-scrollbar {
+    width: 0;  
 }
 
 .logo-box{
