@@ -53,6 +53,7 @@ img{
 body{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     height: 100%;
     margin: 0;
     font-family: var(--main-font-family);
@@ -62,4 +63,14 @@ body{
 
 .site-main{
     flex-grow: 1;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }

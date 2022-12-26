@@ -2,7 +2,11 @@
     position: relative;
     top: 0;
     left: 0;
+    display: flex;
     margin-left: 106px;
+}
+.home-wrapper{
+    width: 100%;
     padding-right: 46px;
 }
 .dishes-list-box{

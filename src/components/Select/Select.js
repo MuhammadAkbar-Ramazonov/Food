@@ -1,8 +1,8 @@
 import "./Select.scss";
 
-export const Select = ({name, children}) => {
+export const Select = ({name, children, className}) => {
     return <>
-        <select className={`site-select`} name={`${name}_reuslt`}>
+        <select className={`site-select ${className}`} name={`${name}_reuslt`}>
             {children}
         </select>
     </>
