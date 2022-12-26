@@ -1,0 +1,61 @@
+.orders-modal-card-item {
+  display: flex;
+  align-items: stretch;
+  max-width: 101px;
+  width: 100%;
+}
+
+.orders-modal-card-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.orders-modal-card-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  color: #abbbc2;
+  border: 1px solid #393c49;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.orders-modal-card-label-active {
+  color: #fff;
+  border-color: #abbbc2;
+  background-color: #252836;
+}
+
+.orders-modal-card-title {
+  display: inline-block;
+  margin-top: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #abbbc2;
+  transition: color 0.3s ease;
+}
+
+.orders-modal-card-label-active .orders-modal-card-title {
+  color: #fff;
+}
+
+.orders-mmodal-card-checked {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: none;
+  width: 16px;
+  height: 16px;
+  background-image: url("../../../assets/images/checkmark-circle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.orders-modal-card-label-active .orders-mmodal-card-checked {
+  display: inline-block;
+}/*# sourceMappingURL=OrdersCard.css.map */

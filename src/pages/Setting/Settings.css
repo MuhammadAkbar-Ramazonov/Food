@@ -1,0 +1,32 @@
+.settings-inner {
+  padding: 24px;
+  margin-left: 104px;
+}
+
+.settings-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #fff;
+}
+
+.settings-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.settings-nav {
+  max-width: 275px;
+  width: 100%;
+  height: 723px;
+  margin-right: 24px;
+  background-color: #1F1D2b;
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+
+.settings-nav::-webkit-scrollbar {
+  width: 0;
+}/*# sourceMappingURL=Settings.css.map */
