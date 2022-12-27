@@ -208,7 +208,7 @@ export const Dashboard = () => {
 
 						<button className='dashboard__order-button'>View All</button>
 					</div>
-					<div className='dashboard__orders-most-order'>
+					<div className='dashboard__orders-most-order dashboard__orders-most-order--active'>
 						<div className='dashboard__orders-heading'>
 							<h3 className='dashboard__order-title'>Most Type of Order</h3>
 							<Select name='MostTypeOrder'>

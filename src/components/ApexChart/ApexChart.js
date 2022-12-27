@@ -54,7 +54,7 @@ export const ApexChart = () => {
 				options={state.options}
 				series={state.series}
 				type='radialBar'
-				height={350}
+				height={250}
 			/>
 		</div>
 	);
