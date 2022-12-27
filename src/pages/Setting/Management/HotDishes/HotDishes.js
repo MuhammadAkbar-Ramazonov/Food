@@ -25,12 +25,6 @@ export const HotDishes = () => {
 					<HotDishesItem key={index} obj={item} />
 				))}
 			</ul>
-			<div className='settings-hot-dishes-inner-btn-wrap'>
-				<button className='settings-hot-dishes-inner-discard'>
-					Discard Changes
-				</button>
-				<button className='settings-hot-dishes-inner-save'>Save Changes</button>
-			</div>
 			<Modal />
 		</div>
 	);
