@@ -168,7 +168,7 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 2px;
-	padding: 10px 0 24px 0;
+	padding: 10px 0 24px 0 !important;
 }
 .table-user-title {
 	font-weight: 400;
@@ -188,7 +188,8 @@
 	font-size: 14px;
 	line-height: 140%;
 	margin-bottom: 2px;
-	padding: 14px 0 14px 0;
+	border-bottom-width: 0 !important;
+	padding: 14px 0 14px 0 !important;
 	color: #e0e6e9;
 }
 .table-total-payment {
@@ -202,7 +203,8 @@
 	font-size: 14px;
 	line-height: 140%;
 	margin-bottom: 2px;
-	padding: 17px 0 30px 0;
+	padding: 17px 0 30px 0 !important;
+	border-bottom-width: 0 !important;
 	color: #e0e6e9;
 }
 .table-status {
@@ -211,21 +213,22 @@
 }
 .table-status-title {
 	margin: 16px 0 26px 0;
-	padding: 4px 12px;
+	padding: 4px 12px!important;
 	font-weight: 500;
 	font-size: 14px;
+	border-bottom-width: 0!important;
 	line-height: 130%;
 	text-align: center;
 	color: #50d1aa;
 	border-radius: 30px;
-	background: #6be2be3d;
+	background-color: #6be2be3d !important;
 }
 .table-status-title:nth-child(2) {
-	background-color: rgba(146, 144, 254, 0.2);
+	background-color: rgba(146, 144, 254, 0.2) !important;
 	color: #9290fe;
 }
 .table-status-title:nth-child(3) {
-	background-color: rgba(255, 181, 114, 0.2);
+	background-color: rgba(255, 181, 114, 0.2) !important;
 	color: #ffb572;
 }
 
@@ -307,7 +310,7 @@
 	color: #abbbc2;
 }
 .dashboard__order-button {
-	width: 324px;
+	width: 331px;
 	padding: 14px 137.5px;
 	margin-top: 8px;
 	color: #ea7c69;

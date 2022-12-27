@@ -17,14 +17,16 @@
 	margin: 0 38px;
 	margin-bottom: 16px;
 }
-.settings-hot-dishes-inner-item-edit {
+.settings-hot-dishes-inner-item-edit-btn {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	width: 211px;
+	padding: 111px 52px 110px 57px;
 	border: 1px dashed #ea7c69;
 	border-radius: 8px;
+	width: 211px;
+	background-color: transparent;
 }
 .settings-hot-dishes-inner-item-edit-title {
 	font-weight: 600;
