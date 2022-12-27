@@ -7,6 +7,7 @@ import { Message } from "./pages/Message";
 import { Notification } from "./pages/Notification";
 import { Setting } from "./pages/Setting";
 import { NavBar } from "./components/NavBar/NavBar";
+import { Modal } from "./components/Modal/Modal";
 
 function App() {
     return (

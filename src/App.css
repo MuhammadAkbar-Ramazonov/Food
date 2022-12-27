@@ -1,0 +1,67 @@
+/* ROOT */
+:root {
+  --main-font-family: "Barlow", "Arial", sans-serif;
+  --main-font-weight: 400;
+  --main-body-bg-color: #252836;
+  --main-text-color: #fff;
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/barlow-v12-latin-regular.woff2") format("woff2"), url("./assets/fonts/barlow-v12-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./assets/fonts/barlow-v12-latin-500.woff2") format("woff2"), url("./assets/fonts/barlow-v12-latin-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./assets/fonts/barlow-v12-latin-600.woff2") format("woff2"), url("./assets/fonts/barlow-v12-latin-600.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  background-color: var(--main-body-bg-color);
+}
+
+.site-main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}/*# sourceMappingURL=App.css.map */

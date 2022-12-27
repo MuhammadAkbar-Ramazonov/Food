@@ -1,0 +1,20 @@
+.site-select {
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 44px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #fff;
+  background: #1f1d2b;
+  border: 1px solid #393c49;
+  border-radius: 8px;
+  background-image: url("../../assets/images/arrow-ios-down.svg");
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}/*# sourceMappingURL=Select.css.map */

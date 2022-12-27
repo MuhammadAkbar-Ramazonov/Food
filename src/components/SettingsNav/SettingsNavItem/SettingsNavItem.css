@@ -1,0 +1,62 @@
+.settigs-nav-link {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.settigs-nav-link-active {
+  position: relative;
+  background-color: rgba(234, 124, 105, 0.2588235294);
+}
+.settigs-nav-link-active::after {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 4px;
+  height: 39px;
+  background-color: #ea7c69;
+  border-radius: 30px;
+  content: "";
+}
+
+.settings-nav-icon {
+  display: inline-block;
+  margin-right: 8px;
+  color: #abbbc2;
+  transition: color 0.3s ease;
+}
+
+.settigs-nav-link-active .settings-nav-icon {
+  color: #ea7c69;
+}
+
+.settings-nav-link-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.settings-nav-link-title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #fff;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.settigs-nav-link-active .settings-nav-link-title {
+  color: #ea7c69;
+}
+
+.settings-nav-link-desc {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #abbbc2;
+}/*# sourceMappingURL=SettingsNavItem.css.map */
