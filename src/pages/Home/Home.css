@@ -15,7 +15,10 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 58px;
+  overflow-y: scroll;
+  height: 659px;
+  padding-top: 58px;
+  margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;

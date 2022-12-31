@@ -1,17 +1,15 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { PlusBtn } from "../../../../assets/images/icons/icons";
+
+import { HotDishesItem } from "../HotDishes/HotDishesItem/HotDishesItem";
+import { LocalHost, Food } from "../../../../api/API";
+import { PlusBtn } from "../../../../assets/images/icons";
 import { Modal } from "../../../../components/Modal/Modal";
-import "./HotDishes.scss";
-import { HotDishesItem } from "./HotDishesItem";
-import { LocalHost, Food, Category } from "../../../../api/API";
-export const HotDishes = () => {
+export const Grill = () => {
 	const [data, setData] = useState([]);
 	useEffect(() => {
-		axios
-			.get(`${LocalHost}${Food}1/`)
-			.then((res) => setData(res.data));
-			console.log("oknfjnd");
+		axios.get(`${LocalHost}${Food}2/`).then((res) => setData(res.data));
+		console.log("oknfjnd");
 	}, [LocalHost]);
 
 	return (
