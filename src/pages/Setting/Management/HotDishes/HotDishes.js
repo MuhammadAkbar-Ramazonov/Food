@@ -4,14 +4,12 @@ import { PlusBtn } from "../../../../assets/images/icons/icons";
 import { Modal } from "../../../../components/Modal/Modal";
 import "./HotDishes.scss";
 import { HotDishesItem } from "./HotDishesItem";
-import { LocalHost, Food, Category } from "../../../../api/API";
+import { LocalHost, Food } from "../../../../api/API";
 export const HotDishes = () => {
 	const [data, setData] = useState([]);
 	useEffect(() => {
-		axios
-			.get(`${LocalHost}${Food}1/`)
-			.then((res) => setData(res.data));
-			console.log("oknfjnd");
+		axios.get(`${LocalHost}${Food}1/`).then((res) => setData(res.data));
+		console.log("oknfjnd");
 	}, [LocalHost]);
 
 	return (

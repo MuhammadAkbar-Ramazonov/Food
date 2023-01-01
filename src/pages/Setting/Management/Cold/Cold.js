@@ -1,7 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-
-
 import { HotDishesItem } from "../HotDishes/HotDishesItem/HotDishesItem";
 import { LocalHost, Food } from "../../../../api/API";
 import { PlusBtn } from "../../../../assets/images/icons";

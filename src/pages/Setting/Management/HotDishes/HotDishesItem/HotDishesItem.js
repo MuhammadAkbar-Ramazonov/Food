@@ -10,15 +10,15 @@ export const HotDishesItem = ({ obj }) => {
 						src={`http://localhost:5000/${obj.image}`}
 						width='143'
 						height='130'
-						alt={obj.price}
+						alt={obj.name}
 					/>
-					<h4 className='settings-hot-dishes-inner-item-title'>{obj.price}</h4>
+					<h4 className='settings-hot-dishes-inner-item-title'>{obj.name}</h4>
 					<div className='settings-hot-dishes-inner-item-wraper'>
-						<p className='settings-hot-dishes-inner-item-desc'>
-							{obj.price}
-						</p>
+						<p className='settings-hot-dishes-inner-item-desc'>$ {obj.price}</p>
 						<span className='settings-hot-dishes-inner-item-dots'></span>
-						<p className='settings-hot-dishes-inner-item-desc'>{obj.bowls}</p>
+						<p className='settings-hot-dishes-inner-item-desc'>
+							{obj.bowls} Bowls
+						</p>
 					</div>
 				</div>
 				<div className=''>

@@ -13,7 +13,6 @@
 
 .dishes-list-box {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   overflow-y: scroll;
   height: 659px;
