@@ -1,6 +1,12 @@
 import "./Management.scss";
 import { NavLink, Route, Routes } from "react-router-dom";
 import { HotDishes } from "./HotDishes";
+import { Cold } from "./Cold/Cold";
+import { Soup } from "./Soup/Soup";
+import { Grill } from "./Grill/Grill";
+import { Dessert } from "./Dessert/Dessert";
+import { Appetizer } from "./Appetizer/Appetizer";
+
 export const Management = () => {
 	return (
 		<>
@@ -100,11 +106,11 @@ export const Management = () => {
 				<Routes>
 					{/* <Route path="/setting" element={<Navigate to="management" replace={true}/>}/> */}
 					<Route path='/' element={<HotDishes />} />
-					<Route path='cold' element={"cold"} />
-					<Route path='soup' element={"soup"} />
-					<Route path='grill' element={"grill"} />
-					<Route path='appatizer' element={"appatizer"} />
-					<Route path='dessert' element={"dessert"} />
+					<Route path='cold' element={<Cold />} />
+					<Route path='soup' element={<Soup />} />
+					<Route path='grill' element={<Grill />} />
+					<Route path='appatizer' element={<Appetizer />} />
+					<Route path='dessert' element={<Dessert />} />
 				</Routes>
 			</div>
 		</>

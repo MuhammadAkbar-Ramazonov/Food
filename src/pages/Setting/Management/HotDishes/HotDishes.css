@@ -3,11 +3,13 @@
 }
 
 .settings-hot-dishes-inner-list {
+  height: 549px;
   padding-left: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 75px;
+  margin-top: 24px;
+  overflow-y: scroll;
   gap: 16px;
 }
 
@@ -18,7 +20,33 @@
   margin-bottom: 16px;
 }
 
+.settings-hot-dishes-inner-item-edit-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 111px 52px 110px 57px;
+  border: 1px dashed #ea7c69;
+  border-radius: 8px;
+  width: 211px;
+  background-color: #1f1d2b;
+}
+
+.settings-hot-dishes-inner-item-edit-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 8px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #ea7c69;
+}
+
 .settings-hot-dishes-inner-item {
+  height: 299px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 24px;
   text-align: center;
   background-color: #1f1d2b;
@@ -69,15 +97,43 @@
 .settings-hot-dishes-inner-item-btn {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   font-weight: 600;
   font-size: 14px;
   line-height: 140%;
-  margin-left: 8px;
   padding: 16px 69px;
   border: 0;
-  color: #EA7C69;
-  background-color: rgba(234, 124, 105, 0.2392156863);
-  opacity: 0.24;
+  color: #ea7c69;
+  background-color: rgba(234, 124, 105, 0.24);
   border-radius: 0px 0px 8px 8px;
+}
+
+.settings-hot-dishes-inner-btn-wrap {
+  padding-top: 48px;
+}
+
+.settings-hot-dishes-inner-discard {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  margin-right: 8px;
+  padding: 14px 34.5px;
+  border: 0;
+  color: #ea7c69;
+  background: transparent;
+  border: 1px solid #ea7c69;
+  border-radius: 8px;
+}
+
+.settings-hot-dishes-inner-save {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  padding: 14px 43px;
+  border: 0;
+  color: #fafafa;
+  background: #ea7c69;
+  box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+  border-radius: 8px;
 }/*# sourceMappingURL=HotDishes.css.map */

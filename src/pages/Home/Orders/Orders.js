@@ -1,52 +1,17 @@
 import "./Orders.scss";
-import dish1 from "../../../assets/data/images/image1.png"
-import dish2 from "../../../assets/data/images/image2.png"
-import dish3 from "../../../assets/data/images/image3.png"
-import Grill1 from "../../../assets/data/images/Grill1.jfif"
-import Grill2 from "../../../assets/data/images/Grill2.jfif"
 import { OrdersItems } from "../../../components/OrdersItems/OrdersItems";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { PaymentModal } from "../../../Context/Payment";
+import axios from "axios";
+import { Food, LocalHost } from "../../../api/API";
 export const Orders = () => {
-    const ordersFood = [
-        {
-            id: 1,
-            foodImg: dish1,
-            foodName: 'Spicy seasoned seafood noodles',
-            foodPrice: '$ 2.29',
-            isAvailable: '20 Bowls available',
-        },
     
-        {
-            id: 2,
-            foodImg: dish2,
-            foodName: 'Salted Pasta with mushroom sauce',
-            foodPrice: '$ 2.69',
-            isAvailable: '11 Bowls available',
-        },
-    
-        {
-            id: 3,
-            foodImg: dish3,
-            foodName: 'Beef dumpling in hot and sour soup',
-            foodPrice: '$ 2.99',
-            isAvailable: '16 Bowls available',
-        },
-        {
-            id: 28,
-            foodImg: Grill1,
-            foodName: 'New York Strip',
-            foodPrice: '$ 20.50',
-            isAvailable: '5 Bowls available',
-        },
-        {
-            id: 29,
-            foodImg: Grill2,
-            foodName: 'Ribye',
-            foodPrice: '$ 19.80',
-            isAvailable: '2 Bowls available',
-        },    
-    ]
+	const [data, setData] = useState([]);
+	useEffect(() => {
+		axios.get(`${LocalHost}${Food}1/`).then((res) => setData(res.data));
+		console.log("oknfjnd");
+	}, [LocalHost]);
+
 
     const {setModalPayment} = useContext(PaymentModal)
     return <>
@@ -80,9 +45,9 @@ export const Orders = () => {
                     </div>
                 </div>
             </div>
-            {ordersFood.length !== 0 ? (
+            {data.length !== 0 ? (
                 <ul className="orders-list">
-                    {ordersFood.map(item => <OrdersItems obj={item} />)}
+                    {data.map(item => <OrdersItems obj={item} />)}
                 </ul>
             ):(
                 <h3 className="orders-top-title">

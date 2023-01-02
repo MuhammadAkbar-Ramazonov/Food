@@ -1,9 +1,20 @@
-import {FoodItmes} from "../../../components/FoodItmes"
-import {appetizer} from "../../../assets/data/Dishes"
+import { FoodItmes } from "../../../components/FoodItmes";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Food, LocalHost } from "../../../api/API";
 export const Appetizer = () => {
-    return<>
-        <ul className="dishes-list-box">
-            {appetizer.map(item => <FoodItmes obj={item} />)}
-        </ul>
-    </>
-}
+	const [data, setData] = useState([]);
+	useEffect(() => {
+		axios.get(`${LocalHost}${Food}5/`).then((res) => setData(res.data));
+		console.log("oknfjnd");
+	}, [LocalHost]);
+	return (
+		<>
+			<ul className='dishes-list-box'>
+				{data.map((item, index) => (
+					<FoodItmes key={index} obj={item} />
+				))}
+			</ul>
+		</>
+	);
+};
