@@ -1,5 +1,4 @@
 import "./Settings.scss";
-import { Navigate } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import { Appereance } from "./Appereance";
 import { Restaurant } from "./Restaurant";
