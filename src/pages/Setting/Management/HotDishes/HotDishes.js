@@ -5,12 +5,14 @@ import { Modal } from "../../../../components/Modal/Modal";
 import "./HotDishes.scss";
 import { HotDishesItem } from "./HotDishesItem";
 import { LocalHost, Food } from "../../../../api/API";
+import { EditModal } from "../../../../components/Modal/EditModal/EditModal";
 export const HotDishes = () => {
+	const [editFoodId, setEditFoodId] = useState(-1)
 	const [data, setData] = useState([]);
 	useEffect(() => {
-		axios.get(`${LocalHost}${Food}1/`).then((res) => setData(res.data));
+		axios.get(`${LocalHost}${Food}/1`).then((res) => setData(res.data));
 		console.log("oknfjnd");
-	}, [LocalHost]);
+	}, [editFoodId]);
 
 	return (
 		<div className='settings-hot-dishes-inner'>
@@ -29,10 +31,11 @@ export const HotDishes = () => {
 					</button>
 				</li>
 				{data.map((item, index) => (
-					<HotDishesItem key={index} obj={item} />
+					<HotDishesItem key={index} obj={item} setEditFood={setEditFoodId}/>
 				))}
 			</ul>
 			<Modal />
+			<EditModal id={editFoodId} setEditFoodId={setEditFoodId} />
 		</div>
 	);
 };

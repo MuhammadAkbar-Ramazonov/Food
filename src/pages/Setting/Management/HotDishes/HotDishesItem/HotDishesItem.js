@@ -1,6 +1,6 @@
 import { EditBtn } from "../../../../../assets/images/icons/icons";
 
-export const HotDishesItem = ({ obj }) => {
+export const HotDishesItem = ({ obj, setEditFood }) => {
 	return (
 		<>
 			<li className='settings-hot-dishes-inner-item'>
@@ -22,7 +22,9 @@ export const HotDishesItem = ({ obj }) => {
 					</div>
 				</div>
 				<div className=''>
-					<button className='settings-hot-dishes-inner-item-btn' type='button'>
+					<button className='settings-hot-dishes-inner-item-btn' onClick={() => {
+						setEditFood(obj.id)
+					}} data-bs-toggle='modal' data-bs-target='#EditModal' type='button'>
 						<EditBtn />
 						Edit dish
 					</button>

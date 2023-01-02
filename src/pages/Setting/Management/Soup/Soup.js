@@ -5,10 +5,12 @@ import { HotDishesItem } from "../HotDishes/HotDishesItem/HotDishesItem";
 import { LocalHost, Food } from "../../../../api/API";
 import { PlusBtn } from "../../../../assets/images/icons";
 import { Modal } from "../../../../components/Modal/Modal";
+import { EditModal } from "../../../../components/Modal/EditModal/EditModal";
 export const Soup = () => {
+	const [editFoodId, setEditFoodId] = useState(-1)
 	const [data, setData] = useState([]);
 	useEffect(() => {
-		axios.get(`${LocalHost}${Food}2/`).then((res) => setData(res.data));
+		axios.get(`${LocalHost}${Food}/3`).then((res) => setData(res.data));
 		console.log("oknfjnd");
 	}, [LocalHost]);
 
@@ -29,10 +31,11 @@ export const Soup = () => {
 					</button>
 				</li>
 				{data.map((item, index) => (
-					<HotDishesItem key={index} obj={item} />
+					<HotDishesItem key={index} obj={item} setEditFood={setEditFoodId}/>
 				))}
 			</ul>
 			<Modal />
+			<EditModal id={editFoodId} setEditFoodId={setEditFoodId} />
 		</div>
 	);
 };
